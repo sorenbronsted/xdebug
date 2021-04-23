@@ -3,13 +3,14 @@
 This contains a small demo on how to setup xdebug over ssh and debug with vscode. 
 It also contains som network tools, so you can experiment and debug your xdebug voyage.
 
-Put this code on at machine med docker and run `make build up` and point your browser to
-the `machine:8000`
+Put this code on at computer med docker and run `make build up` and point your browser at `computer:8000`
 
 ## The setup
 
+This is the setup I was trying ro solve.
+
 ```
-Computer A ip:192.168.1.10:9000 
+Computer A ip:192.168.1.10:9000 with vscode
   |
 ssh tunnel
   | 
