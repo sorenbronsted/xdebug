@@ -1,0 +1,11 @@
+version: '3'
+services:
+  xdebug:
+    build: .
+    working_dir: /var/www/service
+    volumes:
+        - ./src:/var/www/service
+        - ./conf/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+        - ./conf/xdebug.ini:/etc/php/7.4/mods-available/xdebug.ini
+    ports:
+        - "8000:80"
