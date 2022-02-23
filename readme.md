@@ -3,11 +3,11 @@
 This contains a small demo on how to setup xdebug over ssh and debug with vscode. 
 It also contains som network tools, so you can experiment and debug your xdebug voyage.
 
-Put this code on at computer med docker and run `make build up` and point your browser at `computer:8000`
+Put this code on your a computer with docker and run `make build up` and point your browser at `computer:8000`
 
 ## The setup
 
-This is the setup I was trying ro solve.
+This is the setup I was trying to solve.
 
 ```
 Computer A ip:192.168.1.10:9000 with vscode
@@ -74,7 +74,7 @@ and verify that there exists this value in the Local Address column
 
 ## Trouleshooting
 
-Apart from activating debug in xdebug on the client and server the docker contains som net tools.
+Apart from activating debug in xdebug on the client and server the this docker contains som net tools.
 Especially Netcat which I used to debug connections between the components. By running as a simple
 chat setup it is easy verify the connections problems. 
 Start the listening part/server by `nc -l -p 7000` and a client part by `nc -D <ip> 7000` and start chatting.
